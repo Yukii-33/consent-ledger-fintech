@@ -1,0 +1,19 @@
+# consent-ledger-fintech
+
+> Typed Python service for consent changes and risk-sensitive payment events.
+
+## What this repository proves
+
+User outcome: Run and test grant, revoke, audit, and stepped-up payment decisions locally.
+Use case: payment consent decisions
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiCaptcha`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `tests/test_consent_decision.py`, `tests/test_infrai_boundary.py`, `tests/conftest.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

@@ -1,0 +1,2 @@
+"""Consent-ledger example package."""
+
